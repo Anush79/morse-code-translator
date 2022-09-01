@@ -32,12 +32,12 @@ header img{
 }
 
 .container1 {
-    width: 800px;
+    width: 820px;
 }
 
 .container1 img {
-    width: 800px;
-    height: 600px;
+    width: 820px;
+    height: 652px;
 }
 
 .container2 {
@@ -48,12 +48,13 @@ header img{
 
 .container2 p {
     font-size: 20px;
+    margin-top: 20px;
 }
 
 textarea {
     margin: 15px;
-    height: 150px;
-    width: 450px;
+    height: 170px;
+    width: 610px;
     margin-left: 20px;
     border-radius: 13px;
     padding: 10px;
@@ -77,10 +78,18 @@ textarea {
 #btnTranslate {
     position: relative;
     padding: 20px;
+    color: rgb(249, 249, 249);
     border-radius: 13px;
     font-size: 15px;
-    left: 160px;
-    background-color: rgb(3, 156, 216);
-    box-shadow: 10px 10px 5px rgba(3, 156, 216, 0.3);
+    left: 230px;
+    background:linear-gradient(to right, #e90c0c , #039cd8);
+    box-shadow: 10px 10px 5px #0505054d;
     font-family: 'silkscreen';
+}
+#btnTranslate:hover{
+    letter-spacing: 1px;
+    transition: ease-in 0.3s;
+}
+#btnTranslate:active{
+    background:#039cd8;
 }

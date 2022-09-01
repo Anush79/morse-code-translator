@@ -69,6 +69,8 @@ textarea {
     font-size: 17px;
     color: rgb(3, 156, 216);
     border: 3px solid rgb(3, 156, 216);
+    box-shadow: 10px 10px 5px rgba(3, 156, 216, 0.305);
+
 }
 
 #btnTranslate {

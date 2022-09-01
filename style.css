@@ -15,10 +15,11 @@ header {
     display: flex;
     text-decoration:overline;
     padding: 20px;
-    border-bottom: 7px dotted #e90c0c;
-    border-left: 7px dotted #e90c0c;
-    border-top: 10px dashed #e90c0c;
-    border-right: 10px dashed #e90c0c;
+    border-radius: 5px;
+    border-bottom: 7px dashed #e90c0c;
+    border-left: 7px dashed #e90c0c;
+    border-top: 9px dotted #039cd8;
+    border-right: 9px dotted #039cd8;
 }
 header img{
     height:40px;

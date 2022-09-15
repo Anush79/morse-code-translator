@@ -29,6 +29,6 @@ function Translate() {
 
 }
 
-if(input!=""){
+
 btn.addEventListener("click", Translate);
-}
+

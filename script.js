@@ -1,6 +1,5 @@
-// var serverurl = "https://api.funtranslations.com/translate/pirate.json";
 
-var serverurl="	https://api.funtranslations.com/translate/morse.json";
+var serverurl = "	https://api.funtranslations.com/translate/morse.json";
 
 var inputText = document.querySelector(".input_text")
 var output_text = document.querySelector(".translation");
@@ -13,7 +12,11 @@ function newUrl(text) {
 
 function errorhanlder(error) {
     console.log("some error", error);
-    alert("Something went wrong, please try again later");
+    if (error.code == 429) {
+        alert("Notice: The limit for API requests per hour has exceeded, please try after some time");
+    } else {
+        alert("Something went wrong, please try again later");
+    }
 }
 
 function Translate() {
@@ -24,6 +27,7 @@ function Translate() {
         .then(json => {
             var translatedText = json.contents.translated;
             output_text.innerText = translatedText;
+            responsiveVoice.speak("Translated Morse code is" + translatedText);
         })
         .catch(errorhanlder);
 

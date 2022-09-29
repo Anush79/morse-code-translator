@@ -4,7 +4,6 @@ var serverurl = "	https://api.funtranslations.com/translate/morse.json";
 var inputText = document.querySelector(".input_text")
 var output_text = document.querySelector(".translation");
 var btn = document.querySelector("#btnTranslate");
-var input = inputText.value;
 
 function newUrl(text) {
     return serverurl + "?" + "text=" + text;
@@ -20,7 +19,8 @@ function errorhanlder(error) {
 }
 
 function Translate() {
-   
+    var input = inputText.value;
+  
     console.log(input);
     fetch(newUrl(input))
         .then(response => response.json())

@@ -28,34 +28,39 @@ header img{
 }
 .main {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .container1 {
-    width: 820px;
+    display: flex;
 }
 
-.container1 img {
-    width: 820px;
-    height: 652px;
+.container1 img{
+    align-items: center;
+    margin-top: 3%;
+    justify-content: center;
 }
 
 .container2 {
     color: rgb(3, 156, 216);
     height: 600px;
-
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
 }
 
 .container2 p {
-    font-size: 20px;
+       font-size: 20px;
     margin-top: 20px;
 }
 
 textarea {
-    margin: 15px;
-    height: 170px;
-    width: 610px;
-    margin-left: 20px;
+    height: 150px;
+    width: 100%;
+    margin: auto;
+  
     border-radius: 13px;
     padding: 10px;
     border: 3px solid #e90c0c;
@@ -64,6 +69,7 @@ textarea {
     font-size: 17px;
 
 }
+
 .input_text{
     color:#e90c0c;
 }
@@ -77,11 +83,10 @@ textarea {
 
 #btnTranslate {
     position: relative;
-    padding: 20px;
+    padding: 10px;
     color: rgb(249, 249, 249);
     border-radius: 13px;
     font-size: 15px;
-    left: 230px;
     background:linear-gradient(to right, #e90c0c , #039cd8);
     box-shadow: 10px 10px 5px #0505054d;
     font-family: 'silkscreen';
@@ -92,4 +97,10 @@ textarea {
 }
 #btnTranslate:active{
     background:#039cd8;
+}
+@media (max-width:800px) {
+    .main{
+        flex-direction: column;
+    }
+
 }

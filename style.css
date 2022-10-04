@@ -33,18 +33,19 @@ header img{
 }
 
 .container1 {
-    display: flex;
+display: flex;
 }
 
 .container1 img{
+   
     align-items: center;
     margin-top: 3%;
-    justify-content: center;
+   
 }
 
 .container2 {
     color: rgb(3, 156, 216);
-    height: 600px;
+    height:600px;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -98,12 +99,16 @@ textarea {
 #btnTranslate:active{
     background:#039cd8;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .main{
         flex-direction: column;
     }
     .container1 img{
         width: 100%;
     }
-
+  
+.container2 p {
+    font-size: 14px;
+ margin-top: 20px;
+}
 }

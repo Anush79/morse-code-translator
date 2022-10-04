@@ -102,5 +102,8 @@ textarea {
     .main{
         flex-direction: column;
     }
+    .container1 img{
+        width: 100%;
+    }
 
 }

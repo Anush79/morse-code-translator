@@ -4,6 +4,10 @@ You can learn Morse code from this website.
 Using this website one can easily change english text into morse code.
 It will also read the morse code for you.
 
+## Live Website
+   [Click here](https://morse-manifester.netlify.app/)
+
+
 ### Tech stack 
     - HTML
     - CSS
